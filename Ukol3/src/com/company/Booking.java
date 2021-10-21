@@ -60,19 +60,19 @@ public class Booking {
         this.type = type;
     }
 
-    public void addGuest(Guest newGuest) {      //nerozumím
-        otherGuests.add(newGuest);              //nerozumím
+    public void addGuest(Guest newGuest) {
+        otherGuests.add(newGuest);
     }
 
-    public void removeGuest(Guest guest) {      //nerozumím
-        otherGuests.remove(guest);              //nerozumím
+    public void removeGuest(Guest guest) {
+        otherGuests.remove(guest);
     }
 
-    public void clearOtherGuests() {            //nerozumím
-        otherGuests.clear();                    //nerozumím
+    public void clearOtherGuests() {
+        otherGuests.clear();
     }
 //
-    public String getDescription() {            //nerozumím
+    public String getDescription() {
         StringBuilder result = new StringBuilder("Booking for "+mainGuest.getFullName()+" ("+type
                 +") from " + begin.toString() + " to " + end.toString() + " other guests: ");
         for (Guest guest : otherGuests) {

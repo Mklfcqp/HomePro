@@ -55,7 +55,7 @@ public class Room {
         this.price = price;
     }
 
-    public String getDescription() {                                                        //nerozumím
-        return "Pokoj č. "+roomNumber+": +capacity+" míst, "+price+" Kč/noc";               //nerozumím
+    public String getDescription() {
+        return "Pokoj č. "+roomNumber+": "+capacity+" míst," +price+" Kč/noc";               
     }
 }

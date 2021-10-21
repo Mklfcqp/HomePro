@@ -38,11 +38,11 @@ public class Guest {
         this.birthDay = birthDay;
     }
 
-//    public String getDescription() {
-//        return "Host: "+name+" "+surname+" ("+birthDay.toString()+")";
-//    }
-//
-//    public String getFullName() {
-//        return getName()+" "+getSurname();
-//    }
+    public String getDescription() {
+        return "Host: "+name+" "+surname+" ("+birthDay+")";
+    }
+
+    public String getFullName() {
+        return getName()+" "+getSurname();
+    }
 }
