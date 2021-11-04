@@ -1,11 +1,11 @@
 package com.company;
 
 public class Room {
-    int roomNumber;
-    String capacity;
-    boolean hasBalcony;
-    boolean hasViewOfTheSea;
-    int price;
+    private int roomNumber;
+    private String capacity;
+    private boolean hasBalcony;
+    private boolean hasViewOfTheSea;
+    private int price;
 
     public Room(int roomNumber, String capacity, boolean hasBalcony, boolean hasViewOfTheSea, int price) {
         this.roomNumber = roomNumber;
@@ -56,6 +56,6 @@ public class Room {
     }
 
     public String getDescription() {
-        return "Pokoj č. "+roomNumber+": "+capacity+" míst," +price+" Kč/noc";               
+        return "Pokoj č. "+roomNumber+": "+capacity+" ," +price+" Kč/noc";
     }
 }

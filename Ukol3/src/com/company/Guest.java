@@ -3,9 +3,9 @@ package com.company;
 import java.time.LocalDate;
 
 public class Guest {
-    String name;
-    String surname;
-    LocalDate birthDay;
+    private String name;
+    private String surname;
+    private LocalDate birthDay;
 
     public Guest(String name, String surname, LocalDate birthDay) {
         this.name = name;

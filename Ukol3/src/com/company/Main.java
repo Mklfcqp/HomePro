@@ -14,18 +14,18 @@ public class Main {
 
         Room room1 = new Room(1, "jednolůžkový", true, true, 1000);
         System.out.println(room1.getDescription());
-        Room room2 = new Room(2, "jednolůžkový", 1000);
+        Room room2 = new Room(2, "jednolůžkový", true, true, 1000);
         System.out.println(room2.getDescription());
-        Room room3 = new Room(3, "trojlůžkový", 2400);
+        Room room3 = new Room(3, "trojlůžkový", false, true,2400);
         System.out.println(room3.getDescription());
 
         Bookings bookings = new Bookings();
-        Booking booking = new Booking(adela, room1, LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), Type.HOLIDAY);
-        bookings.addBooking(booking);
+        Booking booking1 = new Booking(adela, room1, LocalDate.of(2021, 7, 19), LocalDate.of(2021, 7, 26), Type.HOLIDAY);
+        bookings.addBooking(booking1);
 
-        Booking booking = new Booking(adela, room3, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), Type.WORKING);
-        booking.addGuest(jan);
-        bookings.addBooking(booking);
+        Booking booking2 = new Booking(adela, room3, LocalDate.of(2021, 9, 1), LocalDate.of(2021, 9, 14), Type.WORKING);
+        booking2.addGuest(jan);
+        bookings.addBooking(booking2);
 
         bookings.printBookings();
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Booking {
     Guest mainGuest;
-    List<Guest> otherGuests = new ArrayList<>(); //nerozumím
+    List<Guest> otherGuests = new ArrayList<>();
     Room room;
     LocalDate begin;
     LocalDate end;
